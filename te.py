@@ -1,3 +1,1 @@
-import math
-
-print(int(math.sqrt(2)))
+print(0==[])
