@@ -24,10 +24,10 @@ for i in range(k):
 ans = -1
 cnt = 0
 while 1:
-    print(frame)
     cnt += 1
     if cnt > 1000:
         break
+
     for i in range(k):
         x, y, z = horse_list[i]
         idx = frame[x][y].index(i)
@@ -86,7 +86,7 @@ while 1:
             else:
                 frame[mx][my] = frame[mx][my] + tmp_move
             for j in range(len(tmp_move)):
-                if j == 0:
+                if j == len(tmp_move)-1:
                     horse_list[tmp_move[j]] = [mx, my, z]
                 else:
                     horse_list[tmp_move[j]][0] = mx
